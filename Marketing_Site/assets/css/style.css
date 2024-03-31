@@ -6,15 +6,15 @@
 
     /* colors*/
   
-    --logo-orange: hsl(20, 100%, 50%);
-    --middle-blue-green: hsl(176, 35%, 63%);
-    --sonic-silver: hsl(0, 0%, 44%);
-    --eerie-black: hsl(0, 0%, 9%);
-    --ocean-green: hsl(148, 45%, 58%);
-    --candy-pink: hsl(356, 65%, 63%);
-    --cultured: hsl(0, 0%, 96%);
-    --white: hsl(0, 0%, 100%);
-    --black: hsl(0, 0%, 0%);
+    --logo-orange: 	#ff5500;
+    --middle-blue-green: 	#80c2bd;
+    --sonic-silver: 	#707070;
+    --eerie-black: #171717;
+    --ocean-green: 	#64c491;
+    --candy-pink: 	#de636b;
+    --cultured: 	#f5f5f5;
+    --white: 	#ffffff;
+    --black: 	#000000;
   
     /* typography*/
   
@@ -152,13 +152,34 @@
     color: var(--color, var(--white));
     font-weight: var(--fw-600);
     height: var(--height, 60px);
-    padding-inline: 50px;
+    /* padding-inline: 30px; */
+    /* padding: 0 25px; test */
+    padding-left: 30px;
+    padding-right: 5px;
     border: 1px solid var(--border-color, var(--white));
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+  .btn:hover .arrow-icon{
+    transform: rotate(45deg);
+    transition: 0.5s ease;
+  }
+
+  .btn .arrow-icon {
+    margin-left: 20px;
+  }
+
+  .btn .arrow-icon {
+    transition: transform 0.5s ease; /* Apply transition property to the SVG icon */
+}
+
+.btn:hover .arrow-icon {
+    transform: rotate(45deg);
+}
+
   
   .btn-primary:is(:hover, :focus) {
     --background: var(--white);
