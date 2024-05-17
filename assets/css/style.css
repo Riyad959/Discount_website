@@ -156,7 +156,7 @@
     font-weight: var(--fw-600);
     height: var(--height, 60px);
     padding-inline: 50px;
-    border: 1px solid var(--border-color, var(--white));
+    /* border: 1px solid var(--border-color, var(--white)); */
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -215,7 +215,7 @@
     /* padding: 0 25px; test */
     padding-left: 30px;
     padding-right: 5px;
-    border: 1px solid var(--border-color, var(--white));
+    /* border: 1px solid var(--border-color, var(--white)); */
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -272,6 +272,7 @@
     --color: var(--white);
     --border-color: var(--eerie-black);
   }
+  
   
   
   
